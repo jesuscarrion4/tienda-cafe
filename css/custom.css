@@ -96,11 +96,14 @@ ul {
 .contenido-hero form {
     position: relative;
     margin-bottom: 0;
+    display: block;
 }
 
-.contenido-hero form #buscador {
+.contenido-hero #buscador {
     height: 50px;
     margin-bottom: 0;
+    display: block;
+    color: black;
 }
 
 .contenido-hero form .submit-buscador {
@@ -125,7 +128,7 @@ ul {
 
 .barra p {
     margin: 0;
-    color: white;
+    color: black;
 }
 .icono{
     background-repeat: no-repeat;
@@ -201,4 +204,8 @@ ul {
     color: white;
     margin-bottom: 10px;
     text-decoration: none;
+}
+
+.filtro{
+    display: none;
 }
