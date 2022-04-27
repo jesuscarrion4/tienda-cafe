@@ -17,6 +17,16 @@ function comprarCafe(e){
     if(e.target.classList.contains('agregar-carrito')) {
         const cafe = e.target.parentElement.parentElement;
         leerDatosCafe(cafe);
+        Swal.fire({
+            title: '!Se ha añadido al carrito¡',
+            icon: 'success',
+            confirmButtonText: 'aceptar',
+            confirmButtonColor: 'green',
+            padding: '5rem',
+            backdrop: true,
+            timer: 5000,
+        });
+        
     }
 }
 
@@ -137,5 +147,20 @@ document.addEventListener('keyup', e=>{
             :cafe.classList.add('filtro')
         })
     }
-  
 })
+const coordenadas = { lat: -33.5149168, lng: -70.6051204 };
+let map;
+let marker;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: coordenadas,
+    zoom: 12,
+  });
+  const marker = new google.maps.Marker({
+    position: coordenadas,
+    map: map,
+  });
+}
+
+window.initMap = initMap;

@@ -209,3 +209,17 @@ ul {
 .filtro{
     display: none;
 }
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+.maps {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+}
