@@ -138,6 +138,7 @@ function vaciarLocalStorage() {
     localStorage.clear();
 }
 
+/* barra de busqueda */
 document.addEventListener('keyup', e=>{
 
     if (e.target.matches('#buscador')){
@@ -148,6 +149,8 @@ document.addEventListener('keyup', e=>{
         })
     }
 })
+
+/* api google */
 const coordenadas = { lat: -33.5149168, lng: -70.6051204 };
 let map;
 let marker;
